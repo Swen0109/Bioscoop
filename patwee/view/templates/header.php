@@ -6,12 +6,19 @@
 	<title>www.patwee.nl</title>	
 	<script src="https://kit.fontawesome.com/66499e4192.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?= URL ?>">
 </head>
 <body>
-	<nav>
-	<ul>
-		<li><a href="<?= URL ?>home/index">Home</a></li>
-		<li><a href="<?= URL ?>snackbar/index">Students</a></li>
-	</ul>
-	</nav>
+	<div id="container">
+		<nav class="navbar navbar-expand-lg navbar-dark" style="height:40px; background-color:#252525;">
+			<ul class="d-flex align-self-center">
+				<li  class="navbar-brand"><a href="<?= URL ?>home/index">Home</a></li>
+				<li  class="navbar-brand"><a href="<?= URL ?>snackbar/index">snackbar</a></li>
+			</ul>
+		</nav>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-warning sticky-top">
+			<ul class="d-flex align-self-center">
+				<img src="<?php echo URL ?>public/afbeeldingen/logo/patwee_logo.png?>" style="width:50px;">&nbsp;&nbsp;&nbsp;&nbsp;
+				<li  class="navbar-brand"><a href="<?= URL ?>home/index">Home</a></li>
+				<li  class="navbar-brand"><a href="<?= URL ?>snackbar/index">snackbar</a></li>
+			</ul>
+		</nav>
