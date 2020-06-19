@@ -8,7 +8,7 @@
   <img style="width:200px; height:300px;" class="card-img-top" src="<?= URL ?>public/afbeeldingen/films/<?php echo $film['afbeelding']?>" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title"><?php echo $film['titel'];?></h4>
-    <a href="#!" class="btn btn-primary">Details</a>
+   <a href="home/index" class="btn btn-primary">Details</a>
   </div>
 </div>
   
