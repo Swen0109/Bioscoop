@@ -16,8 +16,8 @@
 		</nav>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-warning sticky-top">
 			<ul class="d-flex align-self-center">
-				<img src="<?php echo URL ?>public/afbeeldingen/logo/patwee_logo.png?>" style="width:50px;">&nbsp;&nbsp;&nbsp;&nbsp;
-				<li  class="navbar-brand"><a href="<?= URL ?>home/index">films</a></li>
-				<li  class="navbar-brand"><a href="<?= URL ?>snackbar/index">snackbar</a></li>
+				<img src="<?php echo URL ?>public/afbeeldingen/logo/patwee_logo_footer.png?>" style="width:100px;">&nbsp;&nbsp;&nbsp;&nbsp;
+				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>home/index">films</a></li>
+				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>snackbar/index">snackbar</a></li>
 			</ul>
 		</nav>
