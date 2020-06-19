@@ -23,3 +23,27 @@ function getAllbezoekers(){
 
 	return $statement->fetchAll();
 }
+
+function getAllfilms(){
+	$conn = openDatabaseConnection();
+
+	$sql = "SELECT * FROM films";
+	$statement = $conn->prepare($sql);
+	$statement->execute();
+
+	$conn = null;
+
+	return $statement->fetchAll();
+}
+
+function getAllreserveringen(){
+	$conn = openDatabaseConnection();
+
+	$sql = "SELECT * FROM reservering";
+	$statement = $conn->prepare($sql);
+	$statement->execute();
+
+	$conn = null;
+
+	return $statement->fetchAll();
+}
