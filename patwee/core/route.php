@@ -18,7 +18,8 @@ function route()
         // Bijvoorbeeld: http://localhost/Students/Edit/1, dan is de action Edit.
         // De 1 wordt als eerste 'params' geplaatst
         // In de controller Students wordt gekeken of de function Edit bestaat.
-        if (function_exists($url['action'])) {
+define('DEFAULT_CONTROLLER', 'home'); // Dit is de standaard controller waarmee de webapplictie wordt opgestart
+if (function_exists($url['action'])) {
             // Wanneer die bestaat wordt er gekeken of je parameters hebt meegegeven bestaan. Als die bestaan worden die aan de functie meegegeven
             if ($url['params']) {
                 call_user_func_array($url['action'], $url['params']);

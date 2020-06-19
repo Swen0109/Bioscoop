@@ -17,7 +17,8 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-warning sticky-top">
 			<ul class="d-flex align-self-center">
 				<img src="<?php echo URL ?>public/afbeeldingen/logo/patwee_logo_footer.png?>" style="width:100px;">&nbsp;&nbsp;&nbsp;&nbsp;
-				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>home/index"><i class="fas fa-users" style="color:#252525;"></i></a></li>
+				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>home/index"><i class="fas fa-video" style="color:#252525;"></i></a></li>
+				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>bezoekers/index"><i class="fas fa-users" style="color:#252525;"></i></a></li>
 				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>snackbar/index"><i class="fas fa-hotdog"  style="color:#252525;"></i></a></li>
 			</ul>
 		</nav>
