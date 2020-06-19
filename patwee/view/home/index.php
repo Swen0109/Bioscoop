@@ -5,7 +5,7 @@
 <?php foreach ($films as $film){?>
  
  <div style="width:200px; height:500px; "class="card float-left">
-  <img style="width:200px;" class="card-img-top" src="<?= URL ?>public/afbeeldingen/films/<?php echo $film['afbeelding']?>" alt="Card image cap">
+  <img style="width:200px; height:300px;" class="card-img-top" src="<?= URL ?>public/afbeeldingen/films/<?php echo $film['afbeelding']?>" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title"><?php echo $film['titel'];?></h4>
     <a href="#!" class="btn btn-primary">Details</a>
