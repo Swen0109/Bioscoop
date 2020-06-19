@@ -1,4 +1,4 @@
-<br><h1>de snackbar</h1><br>
+<br><h1 class="text-center">de snackbar</h1><br>
 <div class="container d-inline-flex align-self-center" style="width:100%;">
     
 		<?php
