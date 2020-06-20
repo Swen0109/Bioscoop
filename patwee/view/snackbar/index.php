@@ -10,7 +10,7 @@
             	    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
 					<p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
 					<p class="card-text">type: <?php echo $snack["type"]; ?></p>
-					<p class="card-text">beschrijving:<br><?php echo $snack["beschrijving"];?></p>
+					<p class="card-text">beschrijving:<br><?php echo $snack["beschrijving"];?></p> 
             	</div>
         	</div>
 			<br><br>
@@ -18,4 +18,4 @@
 			}
 		?>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
