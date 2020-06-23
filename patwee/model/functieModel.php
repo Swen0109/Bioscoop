@@ -47,3 +47,12 @@ function getAllreserveringen(){
 
 	return $statement->fetchAll();
 }
+
+function createbezoeker($naam, $leeftijd, $telNummer){
+    $conn=openDatabaseConnection();
+    $statement=$conn->prepare("INSERT INTO bezoekers (naam, leeftijd, telNummer) VALUES (:naam, :leeftijd, :telNummer)");
+    $statement->bindParam(":naam" , $naam);
+	$statement->bindParam(":leeftijd" , $leeftijd);
+	$statement->bindParam(":telNummer" , $telNummer);
+    $statement->execute();
+}

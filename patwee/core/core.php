@@ -27,3 +27,15 @@ function render($filename, $data = null)
 	require(ROOT . 'view/' . $filename . '.php');
 	require(ROOT . 'view/templates/footer.php');
 }
+function render2($filename, $data = null)
+{
+	if ($data) {
+
+		foreach($data as $key => $value) {
+			$$key = $value;
+		}
+	} 
+
+	require(ROOT . 'view/templates/Noheader.php');
+	require(ROOT . 'view/' . $filename . '.php');
+}
