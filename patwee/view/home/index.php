@@ -2,18 +2,17 @@
  <h1 class="text-center">Welkom bij Patwee!</h1>
 <br>
 <br>
+
 <?php foreach ($films as $film){?>
  
- <div style="width:200px; height:500px; "class="card float-left">
+ <div style="width:200px; height:450px;" class="card float-left float-left text-center">
   <img style="width:200px; height:300px;" class="card-img-top" src="<?= URL ?>public/afbeeldingen/films/<?php echo $film['afbeelding']?>" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title"><?php echo $film['titel'];?></h4>
-   <a href="home/index" class="btn btn-primary">Details</a>
+    <p class="card-title text-center"><?php echo $film['titel'];?></p>
+    <a style="position:absolute; top:400px; left:60px;" href="home/index" class="btn btn-primary">Details</a>
   </div>
 </div>
   
-
-
 
 <?php } ?>
 </div>
