@@ -18,3 +18,22 @@ function store(){
     createbezoeker($naam, $leeftijd, $telNummer);
     index();
 }
+
+function update($id){
+	$bezoeker=getbezoeker($id);
+	render("bezoekers/update", array('bezoekers' => $bezoeker));
+}
+
+function edit($id){
+    updatebezoeker($_POST,$id);
+    index();
+}
+
+function delete($id){
+    render("bezoekers/delete", ["id" => $id]);
+}
+
+function destroy($id){
+    deletebezoeker($id);
+    index();
+}

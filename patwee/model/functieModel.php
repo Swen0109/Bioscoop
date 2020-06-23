@@ -48,6 +48,15 @@ function getAllreserveringen(){
 	return $statement->fetchAll();
 }
 
+function getbezoeker($id){
+	$conn = openDatabaseConnection();
+	$statement = $conn->prepare("SELECT * FROM bezoekers WHERE id = :id");
+	$statement->bindParam(":id", $id);
+	$statement->execute();
+	$conn = null;
+	return $statement->fetchAll();
+}
+
 function createbezoeker($naam, $leeftijd, $telNummer){
     $conn=openDatabaseConnection();
     $statement=$conn->prepare("INSERT INTO bezoekers (naam, leeftijd, telNummer) VALUES (:naam, :leeftijd, :telNummer)");
@@ -55,4 +64,21 @@ function createbezoeker($naam, $leeftijd, $telNummer){
 	$statement->bindParam(":leeftijd" , $leeftijd);
 	$statement->bindParam(":telNummer" , $telNummer);
     $statement->execute();
+}
+
+function updateBezoeker($data, $id){
+	$conn=openDatabaseConnection();
+	$statement = $conn->prepare("UPDATE bezoekers SET naam = :naam, leeftijd = :leeftijd, telNummer = :telNummer WHERE id = :id");
+	$statement->bindParam(":id", $id);
+	$statement->bindParam(":naam" , $data["naam"]);
+	$statement->bindParam(":leeftijd" , $data["leeftijd"]);
+	$statement->bindParam(":telNummer" , $data["telNummer"]);
+    $statement->execute();
+}
+
+function deletebezoeker($id){
+    $conn = openDatabaseConnection();
+	$statement = $conn->prepare("DELETE FROM bezoekers WHERE id = :id ");
+	$statement->bindParam(":id",$id);
+	$statement->execute();
 }

@@ -25,8 +25,8 @@
             <td></td>
 			<td><?php echo $bezoeker["telNummer"] ?></td>
             <td>&nbsp;&nbsp;&nbsp;</td>
-			<td><a class="btn btn-dark" href="<?php echo URL ?>home/update/<?php echo $bezoeker["id"] ?>">Wijzigen</a></td>
-			<td><a class="btn btn-dark" href="<?php echo URL ?>home/delete/<?php echo $bezoeker["id"] ?>">Verwijderen</a></td>
+			<td><a class="btn btn-dark" href="<?php echo URL ?>bezoekers/update/<?php echo $bezoeker["id"] ?>">Wijzigen</a></td>
+			<td><a class="btn btn-dark" href="<?php echo URL ?>bezoekers/delete/<?php echo $bezoeker["id"] ?>">Verwijderen</a></td>
 		</tr>
 		<?php
             }
