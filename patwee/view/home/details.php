@@ -1,0 +1,1 @@
+<h1>Bekijk hier alle informatie</h1>

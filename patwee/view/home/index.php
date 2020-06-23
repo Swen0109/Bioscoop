@@ -9,7 +9,7 @@
   <img style="width:200px; height:300px;" class="card-img-top" src="<?= URL ?>public/afbeeldingen/films/<?php echo $film['afbeelding']?>" alt="Card image cap">
   <div class="card-body">
     <p class="card-title text-center"><?php echo $film['titel'];?></p>
-    <a style="position:absolute; top:400px; left:60px;" href="home/index" class="btn btn-primary">Details</a>
+    <a style="position:absolute; top:400px; left:60px;" href="home/details" class="btn btn-primary">Details</a>
   </div>
 </div>
   
