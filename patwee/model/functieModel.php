@@ -36,6 +36,19 @@ function getAllfilms(){
 	return $statement->fetchAll();
 }
 
+function getFilmsById($id){
+	$conn = openDatabaseConnection();
+
+	$sql = "SELECT * FROM films WHERE id = :id";
+	$statement = $conn->prepare($sql);
+	$statement->bindParam("id", $id);
+	$statement->execute();
+	$conn = null;
+
+	return $statement->fetchAll();
+}
+
+
 function getAllreserveringen(){
 	$conn = openDatabaseConnection();
 
