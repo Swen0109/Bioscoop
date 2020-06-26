@@ -6,7 +6,7 @@
         <h4 class="card-title"><?php echo $snacks["naam"]; ?></h4>
 		<p class="card-text">Prijs: <?php echo $snacks["prijs"]; ?></p>
 		<p class="card-text">Type: <?php echo $snacks["type"]; ?></p>
-		<p class="card-text">Beschrijving: <?php echo $snacks["beschrijving"]; ?></p>
+		<p class="card-text text-center" style="max-width:500px; margin-left:500px; margin-bottom:80px;">Beschrijving: <?php echo $snacks["beschrijving"]; ?></p>
       </div>
 </div>
 
