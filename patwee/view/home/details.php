@@ -37,7 +37,7 @@
 
   <br><br>
 
-  <p class="text-center">Deze Film kost: &nbsp;<?php echo $info['Prijs'];?>Euro Per Persoon</p>
+  <p class="text-center">Deze Film kost: &nbsp;<?php echo $info['Prijs'];?>&nbsp;Euro Per Persoon</p>
 
 
 <?php } ?>
