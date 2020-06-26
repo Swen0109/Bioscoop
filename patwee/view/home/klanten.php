@@ -1,4 +1,3 @@
-</nav>
 <h1 class="text-center">Welkom bij de klantenservice</h1>
 <script src="https://kit.fontawesome.com/427f2a21e8.js" crossorigin="anonymous"></script>
 <br><br>
