@@ -1,5 +1,3 @@
-  </nav>
-  
 <h1 class="text-center">Bekijk hier alle informatie</h1>
 <div style="margin-left:1200px;">
   <a class="btn btn-info" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
