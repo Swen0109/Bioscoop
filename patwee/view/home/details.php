@@ -1,8 +1,5 @@
-<ul>
-  <li  class="navbar-brand align-self-center"><a href="<?= URL ?>bezoekers/create"><i class="fas fa-user-plus" style="color:#252525;"></i></a></li>
-</ul>
-</nav>
-
+  </nav>
+  
 <h1 class="text-center">Bekijk hier alle informatie</h1>
 <div style="margin-left:1200px;">
   <a class="btn btn-info" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
@@ -17,7 +14,7 @@
   <li class="list-group-item">Duur:  <?php echo $info['speeltijd'];?></li>
   <li class="list-group-item">Genre:  <?php echo $info['genre'];?></li>
   <li class="list-group-item">Leeftijd:  <?php echo $info['leeftijd'];?></li>
-  <li class="list-group-item">Prijs:  <?php echo $info['Prijs'];?></li>
+  <li class="list-group-item">Prijs:  <?php echo $info['Prijs'];?> Euro</li>
 </ul>
 
 <img style="width:450px; height:550px;" src="<?= URL ?>public/afbeeldingen/films/<?php echo $info['afbeelding']?>" alt="Card image cap">
@@ -27,17 +24,8 @@
 </div>
 </div>
 
-	<div class="text-center" style="position:absolute; top:900px; left:480px;">
+	<div class="text-center" style="position:absolute; top:900px; left:480px; margin-bottom:95px;">
 		<?php echo $info['trailer']?>
 	</div>
 
-  <br><br>
-
-<?php } ?>  
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <?php } ?>  
