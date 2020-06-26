@@ -1,3 +1,4 @@
+</nav>
 <div class="container">
  <h1 class="text-center">Welkom bij Patwee!</h1>
 <br>

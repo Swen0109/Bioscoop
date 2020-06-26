@@ -1,3 +1,8 @@
+<ul>
+     <li  class="navbar-brand align-self-center"><a href="<?= URL ?>bezoekers/create"><i class="fas fa-user-plus" style="color:#252525;"></i></a></li>
+     </ul>
+</nav>
+
 <h1 class="text-center">Bekijk hier alle informatie</h1>
 
 <?php foreach ($filmInfo as $info){?>
@@ -26,6 +31,8 @@
 	<div class="text-center">
 		<?php echo $info['trailer']?>
 	</div>
+
+	<a class="btn btn-info" class="" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
 
 
 <?php } ?>

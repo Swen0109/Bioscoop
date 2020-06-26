@@ -1,3 +1,4 @@
+</nav>
 <h1 class="text-center">Bezoeker gegevens wijzigen</h1>
 <br>
 <?php foreach($bezoekers as $bezoeker){
