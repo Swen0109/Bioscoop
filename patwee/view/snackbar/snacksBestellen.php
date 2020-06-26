@@ -12,6 +12,7 @@
 					<p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
 					<p class="card-text">type: <?php echo $snack["type"]; ?></p>
 					<p class="card-text">beschrijving:<br><?php echo $snack["beschrijving"];?></p>
+                    <form method="post" action="<?php echo URL ?>rekening/index">
                     <select name="aantalSnacks">
                     <option value="0" selected>aantal</option>
                     <option value="0">0</option>
@@ -21,6 +22,7 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select> 
+                </form>
             	</div>
         	</div>
 			<br><br>
