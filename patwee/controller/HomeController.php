@@ -11,3 +11,7 @@ function index()
 function details($id){
 	render("home/details", array('filmInfo' => getFilmsById($id),["id" => $id]));
 }
+
+function klantenservice(){
+	render("home/klanten");
+}
