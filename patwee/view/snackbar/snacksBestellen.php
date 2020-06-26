@@ -1,4 +1,3 @@
-</nav>
 <br><h1 class="text-center">de snackbar</h1><br>
 <form method="post" action="<?php echo URL ?>rekening/store">
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">

@@ -21,3 +21,4 @@
 				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>bezoekers/index"><i class="fas fa-users" style="color:#252525;"></i></a></li>
 				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>snackbar/index"><i class="fas fa-hotdog"  style="color:#252525;"></i></a></li>
 			</ul>
+		</nav>

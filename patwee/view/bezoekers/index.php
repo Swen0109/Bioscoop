@@ -1,4 +1,3 @@
-</nav>
 <div class="container">
 
     <br><h1 class="text-center">Alle bezoekers</h1>
