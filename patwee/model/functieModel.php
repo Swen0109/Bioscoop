@@ -12,6 +12,17 @@ function getAllSnacks(){
 	return $statement->fetchAll();
 }
 
+function getSnacksById($id){
+	$conn = openDatabaseConnection();
+	$sql = "SELECT * FROM snackbar WHERE id = :id";
+	$statement = $conn->prepare($sql);
+	$statement->bindParam("id", $id);
+	$statement->execute();
+	$conn = null;
+
+	return $statement->fetchAll();
+}
+
 function getAllbezoekers(){
 	$conn = openDatabaseConnection();
 
