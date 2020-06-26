@@ -1,4 +1,4 @@
-<br><h1 class="text-center">de snackbar</h1><br>
+<br><h1 class="text-center">De Snackbar</h1><br>
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">
     
 		<?php
@@ -9,7 +9,7 @@
             	<div class="card-body text-center">
             	    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
 					<p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
-					<a href="details/<?php echo $snack['id']?>" class="btn btn-primary">Details</a>
+					<a class="btn btn-primary" style="margin-bottom:25px;" href="details/<?php echo $snack['id']?>">Details</a>
             	</div>
         	</div>
 			<br><br>
