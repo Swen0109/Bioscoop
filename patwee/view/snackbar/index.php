@@ -1,3 +1,4 @@
+</nav>
 <br><h1 class="text-center">de snackbar</h1><br>
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">
     
