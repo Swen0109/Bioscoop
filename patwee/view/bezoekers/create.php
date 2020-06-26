@@ -10,6 +10,6 @@
 <input class="text-center btn btn-warning shadow-lg" style="width: 200px; height: 40px;" type="submit">
 </form>
 </div>
-<p style="position: absolute; left:720px; top:645px;"><a>naar</a><a href="<?= URL ?>home/index" style="color: #616771;">patwee.nl</a></p>
+<p style="position: absolute; left:720px; top:645px;"><a>naar </a><a href="<?= URL ?>home/index" style="color: #616771;">patwee.nl</a></p>
 </body>
 </html>
