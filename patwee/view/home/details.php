@@ -4,6 +4,9 @@
 </nav>
 
 <h1 class="text-center">Bekijk hier alle informatie</h1>
+<div class="float-right">
+  <a class="btn btn-info" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
+</div>
 
 <?php foreach ($filmInfo as $info){?>
 
@@ -32,7 +35,9 @@
 		<?php echo $info['trailer']?>
 	</div>
 
-	<a class="btn btn-info" class="" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
+  <br><br>
+
+  <p class="text-center">Deze Film kost: &nbsp;<?php echo $info['Prijs'];?>Euro Per Persoon</p>
 
 
 <?php } ?>
