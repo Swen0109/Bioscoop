@@ -2,13 +2,12 @@
 
 require(ROOT . "model/functieModel.php");
 
-function index()
-{
+function index(){
 	render("bezoekers/index", array('bezoekers' => getAllbezoekers()));
 }
 
-function create(){
-    render2("bezoekers/create");
+function create($id){
+    render2("bezoekers/create", array('filmId' => getFilmsById($id), ["id" => $id]));
 }
 
 function store(){

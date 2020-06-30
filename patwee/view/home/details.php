@@ -1,9 +1,8 @@
 <h1 class="text-center">Bekijk hier alle informatie</h1>
 <div style="margin-left:1200px;">
-  <a class="btn btn-info" href="<?php echo URL ?>bezoekers/create">Reserveren</a>
-</div>
-
 <?php foreach ($filmInfo as $info){?>
+  <a class="btn btn-info" href="<?php echo URL ?>bezoekers/create/<?php echo $info["id"] ?>">Reserveren</a>
+</div>
 
 <h2 class="text-center"><?php echo $info['titel'];?></h2>
 

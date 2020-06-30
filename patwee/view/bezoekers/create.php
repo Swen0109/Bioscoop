@@ -15,6 +15,10 @@
 	<span class="text-danger float-left">* <?php echo $leeftijdErr;?></span><br>
 	<input class="text-center" style="width: 300px; height: 40px;" type="text" name="telNummer" placeholder="tel-nummer" value="<?php echo $telNummer;?>"></input>
 	<span class="text-danger float-left">* <?php echo $telNummerErr;?></span><br><br>
+	<input class="" type="hidden" name="idBezoekers" value="<?php echo $idBezoekers?>"></input>
+	<?php foreach($filmId as $film){ ?>
+	<input class="" type="text" name="idFilm" value="<?php echo $film["id"] ?>"></input>
+	<?php } ?>
 <input class="text-center btn btn-warning shadow-lg" style="width: 200px; height: 40px;" type="submit">
 </form>
 </div>
