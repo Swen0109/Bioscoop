@@ -1,4 +1,8 @@
 </nav>
+<?php
+	$nameErr = $leeftijdErr = $telNummerErr = "";
+	$name = $leeftijd = $telNummer = "";
+?>
 <body class="bg-warning">
 <img src="<?php echo URL ?>public/afbeeldingen/logo/patwee_logo_black.png?>" style="width:150px; position: absolute; left:720px; top:115px;">
 <div class="card rounded-lg shadow-lg" style="width: 400px; height: 430px; position: absolute; left:570px; top:205px;">
