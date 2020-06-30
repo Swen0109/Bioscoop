@@ -9,6 +9,8 @@
             	<div class="card-body">
             	    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
 					<p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
+                    <p class="card-text">beschrijving: <?php echo $snack["beschrijving"]; ?></p>
+                    <p class="card-text">Type: <?php echo $snack["type"]; ?></p>
                     <input type="text" name="idFilm" value="1" class="d-none"></input>
                     <input type="text" name="idBezoekers" value="1" class="d-none"></input>
                     <input type="text" name="personen" value="2" class="d-none"></input>
