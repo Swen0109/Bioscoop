@@ -2,10 +2,10 @@
 
     <br><h1 class="text-center">de rekening</h1>
 		<?php
-			foreach($bezoekers as $bezoeker){
+			foreach($rekeningen as $rekening){
 		?>
 		<div class="card">
-                
+
         </div><br><br>
 		<?php
             }
