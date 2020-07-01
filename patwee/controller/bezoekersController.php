@@ -3,7 +3,7 @@
 require(ROOT . "model/functieModel.php");
 
 function index(){
-	render("bezoekers/index", array('bezoekers' => getAllbezoekers()));
+	render("bezoekers/index", array('bezoekers' => getAllbezoekers(), 'id' => getId() ));
 }
 
 function create($id){

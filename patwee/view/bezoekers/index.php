@@ -29,6 +29,9 @@
 			<td><a class="btn btn-danger" href="<?php echo URL ?>bezoekers/delete/<?php echo $bezoeker["id"] ?>">Verwijderen</a></td>
 		</tr>
 		<?php
-            }
+			}
+			foreach($id as $info){
+				echo $info["id"];
+			}
 		?>
 </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

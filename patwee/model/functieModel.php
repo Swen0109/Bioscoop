@@ -71,6 +71,17 @@ function getFilmsById($id){
 	return $statement->fetchAll();
 }
 
+function getRekeningenById($id){
+	$conn = openDatabaseConnection();
+
+	$sql = "SELECT * FROM reservering WHERE id = :id";
+	$statement = $conn->prepare($sql);
+	$statement->bindParam("id", $id);
+	$statement->execute();
+	$conn = null;
+
+	return $statement->fetchAll();
+}
 
 function getAllreserveringen(){
 	$conn = openDatabaseConnection();
@@ -160,5 +171,13 @@ function createRekening($idFilm, $idBezoeker, $personen, $kwaliteit, $hoelaat, $
 	$statement->bindParam(":kidzMenu1" , $kidzMenu1);
 	$statement->bindParam(":kidzMenu2" , $kidzMenu2);
 	$statement->bindParam(":kidzMenu3" , $kidzMenu3);
-    $statement->execute();
+	$statement->execute();
+}
+
+function getId(){
+	$conn = openDatabaseConnection();
+	$statement = $conn->prepare("SELECT MAX(id) FROM reservering");
+	$statement->execute();
+	$conn = null;
+	return $statement->fetchAll();
 }
