@@ -15,7 +15,7 @@ function store(){
     $leeftijd=$_POST["leeftijd"];
     $telNummer=$_POST["telNummer"];
     createbezoeker($naam, $leeftijd, $telNummer);
-    render("snackbar/snacksBestellen", array('snacks' => getAllSnacks()));
+    render("snackbar/snacksBestellen", array('snacks' => getAllSnacks(), ));
 }
 
 function update($id){
@@ -56,7 +56,7 @@ function required(){
             $leeftijd = test_input($_POST["leeftijd"]);
             if($leeftijd <= 120){
                 if (!is_numeric($leeftijd)){
-                  $leeftijdErr = "You did not enter numbers only. Please enter only numbers";
+                  $leeftijdErr = "You did not enter numbers only.";
                 }
             }
             else{
@@ -71,13 +71,16 @@ function required(){
       }
 
       if (empty($_POST["naam"]) || !preg_match("/^[a-zA-Z ]*$/",$name)){
-        render2("bezoekers/create", array($nameErr, $leeftijdErr, $telNummerErr));
+        $data = array('nameErr' => $nameErr, 'leeftijdErr' => $leeftijdErr, 'telNummerErr' => $telNummerErr, 'filmId' => $id);
+        render2("bezoekers/create", $data);
       }
       else if (empty($_POST["leeftijd"]) || !is_numeric($leeftijd) || $leeftijd > 120){
-        render2("bezoekers/create", array($nameErr, $leeftijdErr, $telNummerErr));
+        $data = array('nameErr' => $nameErr, 'leeftijdErr' => $leeftijdErr, 'telNummerErr' => $telNummerErr, 'filmId' => $id);
+        render2("bezoekers/create", $data);
       }
       else if (empty($_POST["telNummer"])){
-        render2("bezoekers/create", array($nameErr, $leeftijdErr, $telNummerErr));
+        $data = array('nameErr' => $nameErr, 'leeftijdErr' => $leeftijdErr, 'telNummerErr' => $telNummerErr, 'filmId' => $id);
+        render2("bezoekers/create", $data);
       }
       else {
         store();

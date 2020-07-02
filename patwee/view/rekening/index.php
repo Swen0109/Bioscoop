@@ -2,11 +2,10 @@
 
     <br><h1 class="text-center">de rekening</h1>
         <?php
-            	foreach($id as $info){
-                    $info["id"];
-                }
-			foreach($rekeningId as $rekening){
-               
+            foreach($id as $info){
+                $info["id"];
+            }
+			foreach($rekeningId as $rekening){       
 		?>
 		<div class="card">
                 <?php
