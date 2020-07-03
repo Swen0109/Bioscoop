@@ -30,8 +30,5 @@
 		</tr>
 		<?php
 			}
-			foreach($id as $info){
-				echo $info["id"];
-			}
-		?>
+			?>
 </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
