@@ -21,4 +21,5 @@
 				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>bezoekers/index"><i class="fas fa-users" style="color:#252525;"></i></a></li>
 				<li  class="navbar-brand align-self-center"><a href="<?= URL ?>snackbar/index"><i class="fas fa-hotdog"  style="color:#252525;"></i></a></li>
 			</ul>
+			<li  class="navbar-brand align-self-center float-right" style="margin-right: 130px; font-size: 35px;"><a href="<?= URL ?>admin/create"><i class="fas fa-user-lock"  style="color:#252525;"></i></a></li>
 		</nav>
