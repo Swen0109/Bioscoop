@@ -191,7 +191,6 @@ function getId(){
 	return $statement->fetchAll();
 }
 
-
 function getAdmin1(){
     $conn = openDatabaseConnection();
     $statement = $conn->prepare("SELECT * FROM admins WHERE id = 1");
