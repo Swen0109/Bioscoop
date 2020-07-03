@@ -190,3 +190,28 @@ function getId(){
 	$conn = null;
 	return $statement->fetchAll();
 }
+
+
+function getAdmin1(){
+    $conn = openDatabaseConnection();
+    $statement = $conn->prepare("SELECT * FROM admins WHERE id = 1");
+    $statement->execute();
+    $conn = null;
+    return $statement->fetchAll();
+}
+
+function getAdmin2(){
+    $conn = openDatabaseConnection();
+    $statement = $conn->prepare("SELECT * FROM admins WHERE id = 2");
+    $statement->execute();
+    $conn = null;
+    return $statement->fetchAll();
+}
+
+function getAllAdmins(){
+    $conn = openDatabaseConnection();
+    $statement = $conn->prepare("SELECT * FROM admins");
+    $statement->execute();
+    $conn = null;
+    return $statement->fetchAll();
+}
