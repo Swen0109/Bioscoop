@@ -6,6 +6,10 @@ function index(){
 	render("rekening/index", array('rekeningen' => getAllRekeningen()));
 }
 
+function info($id){
+    render("rekening/index", array('rekeningInfo' => getReserveringById($id), ["id" => $id]));
+}
+
 function create(){
     $idFilm=$_POST["idFilm"];
     $idBezoeker=$_POST["idBezoekers"];

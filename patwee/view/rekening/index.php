@@ -1,12 +1,7 @@
 <div class="container">
-
-    <br><h1 class="text-center">de rekening</h1>
-        <?php
-            foreach($id as $info){
-                $info["id"];
-            }
-			foreach($rekeningId as $rekening){       
-		?>
+    <br><h1 class="text-center">De Rekening</h1>
+    
+	<?php foreach($rekeningInfo as $rekening){?>
 		<div class="card">
                 <?php
                     if($rekening["zoetePopcorn"] != "0"){
