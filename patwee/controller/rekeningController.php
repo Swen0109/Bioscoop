@@ -6,7 +6,6 @@ function index(){
 	render("rekening/index", array('rekeningen' => getAllRekeningen()));
 }
 
-
 function create($id){
     $idFilm=$_POST["idFilm"];
     $idBezoeker=$_POST["idBezoekers"];
@@ -51,5 +50,5 @@ function create($id){
 }
 
 function store($id){
-render("rekening/index", array('snacks' => getAllSnacks(), 'rekeningId' => getRekeningenById(()), 'id' => getId(),'rekeningInfo' => getReserveringById($id)));
+render("rekening/index", array('snacks' => getAllSnacks(), 'rekeningId' => getRekeningenById(), 'id' => getId(), 'rekeningInfo' => getReserveringById($id)));
 }
