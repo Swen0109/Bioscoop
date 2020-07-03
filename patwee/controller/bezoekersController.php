@@ -37,6 +37,7 @@ function destroy($id){
     deletebezoeker($id);
     index();
 }
+
 function required(){
 	$nameErr = $leeftijdErr = $telNummerErr = "";
     $name = $leeftijd = $telNummer = "";
