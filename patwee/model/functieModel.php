@@ -95,7 +95,6 @@ function getAllreserveringen(){
 	return $statement->fetchAll();
 }
 
-
 function getbezoeker($id){
 	$conn = openDatabaseConnection();
 	$statement = $conn->prepare("SELECT * FROM bezoekers WHERE id = :id");
@@ -207,4 +206,19 @@ function getAllAdmins(){
     return $statement->fetchAll();
 }
 
-function 
+function updateAdmin($data, $id){
+	$conn=openDatabaseConnection();
+	$statement = $conn->prepare("UPDATE bezoekers SET naam = :naam, leeftijd = :leeftijd, telNummer = :telNummer WHERE id = :id");
+	$statement->bindParam(":id", $id);
+	$statement->bindParam(":naam" , $data["naam"]);
+	$statement->bindParam(":leeftijd" , $data["leeftijd"]);
+	$statement->bindParam(":telNummer" , $data["telNummer"]);
+    $statement->execute();
+}
+
+function deleteAdmin($id){
+    $conn = openDatabaseConnection();
+	$statement = $conn->prepare("DELETE FROM bezoekers WHERE id = :id ");
+	$statement->bindParam(":id",$id);
+	$statement->execute();
+}
