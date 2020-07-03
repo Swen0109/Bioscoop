@@ -1,10 +1,11 @@
 <br><h1 class="text-center">De Snackbar</h1><br>
-<form class="text-center" method="post" action="<?php echo URL ?>rekening/create">
+<form class="text-center" method="post" action="<?php echo URL ?>rekening/info/<?php echo $snack["id"]?>">
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">
 		<?php
-			foreach($snacks as $snack){
-		?>
-			<div class="card text-center" style="width:300px; margin:10px 0px;">
+			foreach($snacks as $snack){?>
+
+
+        <div class="card text-center" style="width:300px; margin:10px 0px;">
             	<img class="card-img-top img-fluid align-self-center" src="<?php echo URL ?>public/afbeeldingen/snackbar/<?php echo $snack['type']?>/<?php echo $snack['afbeelding']?>" style="width:200px; ">
             	<div class="card-body">
             	    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
@@ -33,6 +34,6 @@
 		?>
         
 </div>
-<input type="submit">
+<input type="submit"></input>
         </form>
 <br><br><br><br><br><br>
