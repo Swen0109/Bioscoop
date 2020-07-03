@@ -221,3 +221,7 @@ function deleteAdmin($id){
 	$statement->bindParam(":id",$id);
 	$statement->execute();
 }
+
+function getAdminById($id){
+	
+}

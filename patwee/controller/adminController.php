@@ -35,20 +35,22 @@ function store(){
 }   
 
 function update($id){
-	$$admin=getAdminById($id);
+	$admin=getAdminById($id);
 	render("admin/update", array('getAdmin' => $admin));
 }
 
 function edit($id){
     updatebezoeker($_POST,$id);
-    index();
+    $data = array('ingelogd' => "true", 'username' => $username1, 'admins' => getAllAdmins());
+    render2("admin/login", $data);
 }
 
 function delete($id){
-    render("bezoekers/delete", ["id" => $id]);
+    render("admin/delete", ["id" => $id]);
 }
 
 function destroy($id){
-    deletebezoeker($id);
-    index();
+    deleteAdmin($id);
+    $data = array('ingelogd' => "true", 'username' => $username1, 'admins' => getAllAdmins());
+    render2("admin/login", $data);
 }
