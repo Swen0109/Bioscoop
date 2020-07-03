@@ -15,7 +15,8 @@ function store(){
     $leeftijd=$_POST["leeftijd"];
     $telNummer=$_POST["telNummer"];
     createbezoeker($naam, $leeftijd, $telNummer);
-    render("snackbar/snacksBestellen", array('snacks' => getAllSnacks()));
+    $data = array('snacks' => getAllSnacks());
+    render("snackbar/snacksBestellen",  $data);
 }
 
 function update($id){
