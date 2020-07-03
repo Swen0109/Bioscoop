@@ -1,15 +1,15 @@
 <br><h1 class="text-center">De Snackbar</h1><br>
 <form class="text-center" method="post" action="<?php echo URL ?>rekening/create">
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">
-		<?php
-			foreach($snacks as $snack){?>
+        <?php
+            foreach($snacks as $snack){?>
 
 
         <div class="card text-center" style="width:300px; margin:10px 0px;">
-            	<img class="card-img-top img-fluid align-self-center" src="<?php echo URL ?>public/afbeeldingen/snackbar/<?php echo $snack['type']?>/<?php echo $snack['afbeelding']?>" style="width:200px; ">
-            	<div class="card-body">
-            	    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
-					<p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
+                <img class="card-img-top img-fluid align-self-center" src="<?php echo URL ?>public/afbeeldingen/snackbar/<?php echo $snack['type']?>/<?php echo $snack['afbeelding']?>" style="width:200px; ">
+                <div class="card-body">
+                    <h4 class="card-title"><?php echo $snack["naam"]; ?></h4>
+                    <p class="card-text">prijs: <?php echo $snack["prijs"]; ?></p>
                     <p class="card-text">beschrijving: <?php echo $snack["beschrijving"]; ?></p>
                     <p class="card-text">Type: <?php echo $snack["type"]; ?></p>
                     <input type="text" name="idFilm" value="1" class="d-none"></input>
@@ -26,13 +26,13 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select> 
-            	</div>
-        	</div>
-			<br><br>
-		<?php
-			}
-		?>
-        
+                </div>
+            </div>
+            <br><br>
+        <?php
+}
+        ?>
+
 </div>
 <input type="submit"></input>
         </form>

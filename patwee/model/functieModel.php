@@ -95,14 +95,6 @@ function getAllreserveringen(){
 	return $statement->fetchAll();
 }
 
-function getReserveringById($id){
-	$conn = openDatabaseConnection();
-	$statement = $conn->prepare("SELECT * FROM reservering WHERE id = :id");
-	$statement->bindParam(":id", $id);
-	$statement->execute();
-	$conn = null;
-	return $statement->fetchAll();
-}
 
 function getbezoeker($id){
 	$conn = openDatabaseConnection();
@@ -185,7 +177,7 @@ function createRekening($idFilm, $idBezoeker, $personen, $kwaliteit, $hoelaat, $
 
 function getId(){
 	$conn = openDatabaseConnection();
-	$statement = $conn->prepare("SELECT MAX(id) FROM reservering");
+	$statement = $conn->prepare("SELECT max(id) FROM reservering");
 	$statement->execute();
 	$conn = null;
 	return $statement->fetchAll();

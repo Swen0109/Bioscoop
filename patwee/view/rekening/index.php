@@ -1,8 +1,8 @@
 <div class="container">
     <br><h1 class="text-center">De Rekening</h1>
     
-	<?php foreach($rekeningInfo as $rekening){?>
-		<div class="card">
+    <?php foreach($rekeningInfo as $rekening){?>
+        <div class="card">
                 <?php
                     if($rekening["zoetePopcorn"] != "0"){
                         echo $rekening["zoetePopcorn"]; " X zoete popcorn";
@@ -105,7 +105,7 @@
                     }
                 ?>
         </div><br><br>
-		<?php
+        <?php
             }
-		?>
+        ?>
 </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
