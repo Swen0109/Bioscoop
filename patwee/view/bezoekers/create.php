@@ -1,8 +1,12 @@
 </nav>
 <?php
-	if(empty($nameErr || $leeftijdErr || $telNummerErr)){
-		$nameErr = $leeftijdErr = $telNummerErr = "";
-		$name = $leeftijd = $telNummer = "";
+	if(empty($nameErr)){
+		if(empty($leeftijdErr)){
+			if(empty($telNummer)){
+				$nameErr = $leeftijdErr = $telNummerErr = "";
+				$name = $leeftijd = $telNummer = "";
+			}
+		}
 	}
 ?>
 <body class="bg-warning">
