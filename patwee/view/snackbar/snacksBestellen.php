@@ -1,5 +1,5 @@
 <br><h1 class="text-center">De Snackbar</h1><br>
-<form class="text-center" method="post" action="<?php echo URL ?>rekening/info/<?php echo $snack["id"]?>">
+<form class="text-center" method="post" action="<?php echo URL ?>rekening/create/<?php echo $snack["id"]?>">
 <div class="container d-flex flex-wrap justify-content-between" style="width:100%;">
 		<?php
 			foreach($snacks as $snack){?>
