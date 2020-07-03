@@ -208,17 +208,16 @@ function getAllAdmins(){
 
 function updateAdmin($data, $id){
 	$conn=openDatabaseConnection();
-	$statement = $conn->prepare("UPDATE bezoekers SET naam = :naam, leeftijd = :leeftijd, telNummer = :telNummer WHERE id = :id");
+	$statement = $conn->prepare("UPDATE admins SET username = :username, wachtwoord = :wachtwoord WHERE id = :id");
 	$statement->bindParam(":id", $id);
-	$statement->bindParam(":naam" , $data["naam"]);
-	$statement->bindParam(":leeftijd" , $data["leeftijd"]);
-	$statement->bindParam(":telNummer" , $data["telNummer"]);
+	$statement->bindParam(":username" , $data["username"]);
+	$statement->bindParam(":wachtwoord" , $data["wachtwoord"]);
     $statement->execute();
 }
 
 function deleteAdmin($id){
     $conn = openDatabaseConnection();
-	$statement = $conn->prepare("DELETE FROM bezoekers WHERE id = :id ");
+	$statement = $conn->prepare("DELETE FROM admins WHERE id = :id ");
 	$statement->bindParam(":id",$id);
 	$statement->execute();
 }
