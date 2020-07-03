@@ -35,8 +35,8 @@ function store(){
 }   
 
 function update($id){
-	$bezoeker=getbezoeker($id);
-	render("bezoekers/update", array('bezoekers' => $bezoeker));
+	$$admin=getAdminById($id);
+	render("admin/update", array('getAdmin' => $admin));
 }
 
 function edit($id){

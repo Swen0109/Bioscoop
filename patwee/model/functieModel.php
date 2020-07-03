@@ -71,7 +71,7 @@ function getFilmsById($id){
 	return $statement->fetchAll();
 }
 
-function getRekeningenById($id){
+function getReserveringById($id){
 	$conn = openDatabaseConnection();
 
 	$sql = "SELECT * FROM reservering WHERE id = :id";

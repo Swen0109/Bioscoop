@@ -6,7 +6,7 @@ function index(){
 	render("rekening/index", array('rekeningen' => getAllRekeningen()));
 }
 
-function create($id){
+function create(){
     $idFilm=$_POST["idFilm"];
     $idBezoeker=$_POST["idBezoekers"];
     $personen=$_POST["personen"];
@@ -47,10 +47,10 @@ function create($id){
     $kidzMenu3=$_POST["33"];
     createRekening($idFilm, $idBezoeker, $personen, $kwaliteit, $hoelaat, $zoetePopcorn, $zoutePopcorn, $mixedPopcorn, $nachosMetGuacamole, $nachosMetSalsa, $NachoDip, $laysNaturel, $laysFromage, $laysPaprika, $doritosSweetChilliPepper, $doritosRoulette, $doritosSpicySweetChilli, $mars, $snickers, $twix, $mms, $skittles, $maltesers, $cocaCola, $cocaColaZero, $cocaColaLight, $iceTeaBubbles, $iceTeaPeach, $fanta, $capriSun, $roosVicee, $appelsap, $fernandesCherry, $fernandesGreen, $fernandesSuper, $kidzMenu1, $kidzMenu2, $kidzMenu3);
     $id = getId();
-    store($id);
+    store();
 }
 
-function store($id){
-    $data = array('snacks' => getAllSnacks(), 'rekeningId' => getRekeningenById(), 'id' => getId(), 'rekeningInfo' => getReserveringById($id), 'idRes' => $id);
+function store(){
+    $data = array('snacks' => getAllSnacks(), 'id' => getId(), 'rekeningInfo' => getReserveringById(getId()));
 render("rekening/index", $data);
 }
