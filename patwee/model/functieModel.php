@@ -223,5 +223,9 @@ function deleteAdmin($id){
 }
 
 function getAdminById($id){
-	
+	$conn = openDatabaseConnection();
+    $statement = $conn->prepare("SELECT * FROM admins WHERE id = $id");
+    $statement->execute();
+    $conn = null;
+    return $statement->fetchAll();
 }
