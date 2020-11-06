@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Gegenereerd op: 03 jul 2020 om 10:34
+-- Gegenereerd op: 06 nov 2020 om 08:31
 -- Serverversie: 8.0.18
 -- PHP-versie: 7.3.11
 
@@ -39,8 +39,8 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `username`, `wachtwoord`) VALUES
-(1, 'Anthony', '1'),
-(2, 'Swen', 'adminCode');
+(1, 'Anthony', 'air'),
+(2, 'Swen', 'kaasstengel');
 
 --
 -- Indexen voor geëxporteerde tabellen
